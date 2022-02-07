@@ -1,3 +1,4 @@
+#백준 1520
 import sys
 
 sys.setrecursionlimit(10000) 
