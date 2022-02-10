@@ -1,3 +1,5 @@
+#백준 2629
+
 def scale(n_list,n,now,left,right,possible):
     new = abs(left-right)
     if(new not in possible):
@@ -23,6 +25,10 @@ m_list = list(map(int, input().split()))
 possible = []
 answer = [[0]*15001 for i in range(n+1)]
 
-
 scale(n_list,n,0,0,0,possible)
-print(possible)
+
+for i in range(0,len(m_list)):
+    if(m_list[i] in possible):
+        print("Y",end=' ')
+    else:
+        print("N",end=' ')
