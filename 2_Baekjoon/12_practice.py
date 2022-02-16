@@ -13,9 +13,12 @@ for item in book:
         right.append(item)
 
 distance = []
+
 left.sort()
+
 for i in range(len(left)//m):
     distance.append(abs(left[m*i]))
+
 if len(left) % m > 0:
     distance.append(abs(left[(len(left)//m)*m]))
     
